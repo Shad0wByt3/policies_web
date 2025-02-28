@@ -1,6 +1,12 @@
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* Espacio entre los botones */
+}
 button {
-    margin: 0 5px;
-    padding: 5px 10px;
+  padding: 5px 10px;
     background-color: #4a90e2;
     color: #fff;
     border: none;
@@ -11,4 +17,3 @@ button {
   button:hover {
     background-color: #357ab8;
   }
-  

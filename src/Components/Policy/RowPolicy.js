@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { generatePDF } from "../../Utils/PdfUtils";
 import "./RowPolicy.css";
+
 const API_URL = process.env.REACT_APP_API_URL;
 
 function RowPolicy({ policy }) {
@@ -9,6 +11,10 @@ function RowPolicy({ policy }) {
   const handleUpdate = () => {
     navigate(`/policie/update/${policy.id}`);
   };
+
+  const handleDownload = () => {
+    generatePDF(policy);
+  }
 
   const handleDelete = () => {
     if (
@@ -47,7 +53,9 @@ function RowPolicy({ policy }) {
       <td>{`${policy.employee}: ${policy.employeeName}`}</td>
       <td>{policy.sku}</td>
       <td>{policy.quantity}</td>
-      <td>
+      <td>{policy.date}</td>
+      <td className="button-container">
+        <button onClick={handleDownload}>Descargar</button>
         <button onClick={handleUpdate}>Actualizar</button>
         <button onClick={handleDelete}>Eliminar</button>
       </td>

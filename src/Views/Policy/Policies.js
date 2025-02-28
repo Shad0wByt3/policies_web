@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./Policy.css";
 import RowPolicy from "../../Components/Policy/RowPolicy";
+import "./Policy.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -37,6 +37,7 @@ function Policies() {
               <th>EMPLEADO</th>
               <th>PRODUCTO</th>
               <th>CANTIDAD</th>
+              <th>Fecha de cración</th>
               <th>ACCIONES</th>
             </tr>
           </thead>
