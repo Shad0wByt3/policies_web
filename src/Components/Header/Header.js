@@ -11,13 +11,12 @@ function Header() {
 
   const toggleSubmenu = (menu) => {
     setSubmenuVisible((prevState) => {
-      // Creamos un nuevo objeto donde todos los submenús están cerrados
       const newState = {
         employee: false,
         policy: false,
         inventory: false,
       };
-      // Si el submenú seleccionado estaba cerrado, lo abrimos
+      
       if (!prevState[menu]) {
         newState[menu] = true;
       }

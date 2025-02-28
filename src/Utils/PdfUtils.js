@@ -23,11 +23,9 @@ export function generatePDF(policy) {
     doc.text(`Póliza generada el: ${policy.date}`, 20, 100);
     doc.text(`PÓLIZA DESCARGADA el: ${downloadDate}`, 20, 120);
 
-    // Guardar el PDF con un nombre único
     doc.save(`poliza_${policy.id}.pdf`);
   };
 
-  // Asegúrate de que la imagen se ha cargado correctamente
   img.onerror = function() {
     console.error("No se pudo cargar la imagen del logo.");
   };

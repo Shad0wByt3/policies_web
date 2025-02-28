@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import "./Policy.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
 function UpdatePolicy() {
   const navigate = useNavigate();
-  const { id } = useParams(); // Asumo que el ID de la póliza se obtiene de los parámetros de la ruta
+  const { id } = useParams();
   const [policy, setPolicy] = useState(null);
   const [employees, setEmployees] = useState([]);
   const [selectedEmployee, setSelectedEmployee] = useState("");
@@ -35,7 +35,6 @@ function UpdatePolicy() {
       }
     };
 
-    // Función para obtener la lista de empleados disponibles
     const fetchEmployees = async () => {
       try {
         const response = await fetch(`${API_URL}/employee/list`);
@@ -97,7 +96,6 @@ function UpdatePolicy() {
       });
   };
 
-  // Manejo de estado de carga y errores
   if (!policy && !errorMessage) {
     return <p>Cargando...</p>;
   }

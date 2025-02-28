@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  /* Espacio entre los botones */
+
 }
 button {
   padding: 5px 10px;

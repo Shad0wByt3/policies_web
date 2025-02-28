@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import "./Inventory.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -58,7 +58,7 @@ function UpdateProduct() {
     }
 
     fetch(`${API_URL}/inventory/update/${sku}`, {
-      method: "PUT", // Usamos PATCH para actualizaciones parciales
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
@@ -74,7 +74,6 @@ function UpdateProduct() {
               navigate("/inventory/list");
             }, 1000);
           } else {
-            // Manejar el error del servidor
             const errorMsg =
               data?.data?.mensaje || "Error al actualizar el producto.";
             throw new Error(errorMsg);

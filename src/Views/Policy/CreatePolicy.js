@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Policy.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -26,8 +26,7 @@ function CreatePolicy() {
         setErrorMessage(error.message);
       }
     };
-
-    // Función para obtener la lista de productos (SKU)
+    
     const fetchProducts = async () => {
       try {
         const response = await fetch(`${API_URL}/inventory/list`);

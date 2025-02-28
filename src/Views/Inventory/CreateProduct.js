@@ -34,10 +34,8 @@ function CreateProduct() {
       .then((response) => {
         return response.json().then((data) => {
           if (response.ok) {
-            // La solicitud fue exitosa
             return data;
           } else {
-            // La solicitud falló, lanzamos un error con los datos de la respuesta
             const error = new Error("Error al crear producto.");
             error.data = data;
             throw error;
@@ -45,7 +43,6 @@ function CreateProduct() {
         });
       })
       .then((data) => {
-        // Operaciones en caso de éxito
         setsuccessMessage("Producto creado exitosamente.");
         seterrorMessage("");
 
@@ -54,7 +51,6 @@ function CreateProduct() {
         setQuantity("");
       })
       .catch((error) => {
-        // Manejamos el error y mostramos el mensaje apropiado
         if (error.data && error.data.data && error.data.data.mensaje) {
           // Mostramos el mensaje de error devuelto por la API
           seterrorMessage(error.data.data.mensaje);
