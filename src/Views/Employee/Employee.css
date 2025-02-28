@@ -1,0 +1,133 @@
+/* Crear */
+.create-employee {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.create-employee h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.create-employee .form-group {
+  margin-bottom: 15px;
+}
+
+.create-employee label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.create-employee input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.create-employee button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-employee button:hover {
+  background-color: #357ab8;
+}
+
+/* Consultar */
+.consult-employees {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.consult-employees h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Actualizar */
+.update-employee {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.update-employee h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-employee .form-group {
+  margin-bottom: 15px;
+}
+
+.update-employee label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.update-employee input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.update-employee button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.update-employee button:hover {
+  background-color: #357ab8;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+thead th {
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+}

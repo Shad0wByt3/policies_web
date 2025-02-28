@@ -1,0 +1,109 @@
+.create-policy {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .create-policy h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .mensaje-error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .create-policy .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .create-policy label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .create-policy select,
+  .create-policy input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .create-policy button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .create-policy button:hover {
+    background-color: #357ab8;
+  }
+  
+/* Consultar */
+.list-policies {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.list-policies h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+  /* Actualizar */
+.update-policy {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.update-policy h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-policy .form-group {
+  margin-bottom: 15px;
+}
+
+.update-policy label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.update-policy input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.update-policy button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.update-policy button:hover {
+  background-color: #357ab8;
+}

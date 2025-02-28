@@ -1,0 +1,133 @@
+/* Crear */
+.create-product {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.create-product h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.create-product .form-group {
+  margin-bottom: 15px;
+}
+
+.create-product label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.create-product input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.create-product button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-product button:hover {
+  background-color: #357ab8;
+}
+
+/* Consultar */
+.consult-products {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.consult-products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Actualizar */
+.update-product {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.update-product h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-product .form-group {
+  margin-bottom: 15px;
+}
+
+.update-product label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.update-product input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.update-product button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.update-product button:hover {
+  background-color: #357ab8;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+thead th {
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+}
